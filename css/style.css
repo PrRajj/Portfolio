@@ -933,10 +933,6 @@ section.active {
   html {
     font-size: 45%;
   }
-
-  .size {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -963,5 +959,11 @@ section.active {
 
   .contact-box h2 {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .resume-item.size h3 {
+    font-size: 1.4rem;
   }
 }
