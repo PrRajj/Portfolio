@@ -305,11 +305,11 @@ section.active {
 
 .home-img .img-box .img-item img {
   position: absolute;
-  /* top: 3rem; */
+  top: 3rem;
   display: block;
   width: 110%;
   object-fit: cover;
-  /* mix-blend-mode: lighten; */
+  mix-blend-mode: lighten;
 }
 
 .heading {
