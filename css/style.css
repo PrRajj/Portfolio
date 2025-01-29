@@ -326,6 +326,8 @@ section.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+  height: 45rem;
+  overflow: auto;
 }
 
 .services-container .services-box {
@@ -336,7 +338,7 @@ section.active {
   transition: 0.5s;
 }
 
-.services-container .services-box:hover {
+.services-container .services-box.not:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
@@ -460,6 +462,8 @@ section.active {
 .verify .company {
   padding-top: 1.5rem;
   margin-right: 1.5rem;
+  margin-left: 10rem;
+  font-weight: 700;
 }
 
 .resume-box .heading {
@@ -485,6 +489,19 @@ section.active {
 }
 
 .resume-list:hover::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.services-container::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.services-container::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.services-container:hover::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
 
@@ -528,11 +545,11 @@ section.active {
 
 .resume-item .company {
   position: relative;
-  margin-left: 0.5rem;
+  margin-left: 3rem;
   margin-bottom: 2rem;
 }
 
-/* .resume-item .company::before {
+.resume-item .company.dot::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -541,7 +558,7 @@ section.active {
   background: var(--main-color);
   border-radius: 50%;
   margin-left: -2rem;
-} */
+}
 
 .address {
   display: flex;
@@ -558,8 +575,8 @@ section.active {
 
 .resume-detail.skills .resume-list {
   grid-template-columns: repeat(1, 1fr);
-  height: auto;
-  overflow: visible;
+  height: 45rem;
+  overflow: auto;
 }
 
 /* .resume-detail.skills .resume-item {
