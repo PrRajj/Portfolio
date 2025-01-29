@@ -525,11 +525,11 @@ section.active {
 
 .resume-item .company {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.resume-item .company::before {
+/* .resume-item .company::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -538,6 +538,15 @@ section.active {
   background: var(--main-color);
   border-radius: 50%;
   margin-left: -2rem;
+} */
+
+.address {
+  display: flex;
+}
+
+.address i {
+  transform: translateY(10%);
+  color: var(--main-color);
 }
 
 .resume-item h3:first-child {
@@ -965,5 +974,9 @@ section.active {
 @media screen and (min-width: 200px) {
   .resume-item.size h3 {
     font-size: 1.4rem;
+  }
+
+  .company.size {
+    font-size: 1.2rem;
   }
 }
