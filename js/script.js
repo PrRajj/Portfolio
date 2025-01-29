@@ -4,6 +4,18 @@ const sections = document.querySelectorAll("section");
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector("header nav");
 
+function checkScreenSize() {
+  const textElement = document.querySelector(".change");
+  if (window.innerWidth <= 600) {
+    textElement.innerText = "IT Operations";
+  } else {
+    textElement.innerHTML = "<h3>IT <br />Operations</h3>";
+  }
+}
+
+window.addEventListener("resize", checkScreenSize);
+checkScreenSize();
+
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
@@ -101,26 +113,26 @@ const activePortfolio = () => {
   portfolioDetails[index].classList.add("active");
 };
 
-arrowRight.addEventListener("click", () => {
-  if (index < 4) {
-    index++;
-    arrowLeft.classList.remove("disabled");
-  } else {
-    index = 5;
-    arrowRight.classList.add("disabled");
-  }
+// arrowRight.addEventListener("click", () => {
+//   if (index < 4) {
+//     index++;
+//     arrowLeft.classList.remove("disabled");
+//   } else {
+//     index = 5;
+//     arrowRight.classList.add("disabled");
+//   }
 
-  activePortfolio();
-});
+// activePortfolio();
+// });
 
-arrowLeft.addEventListener("click", () => {
-  if (index > 1) {
-    index--;
-    arrowRight.classList.remove("disabled");
-  } else {
-    index = 0;
-    arrowLeft.classList.add("disabled");
-  }
+// arrowLeft.addEventListener("click", () => {
+//   if (index > 1) {
+//     index--;
+//     arrowRight.classList.remove("disabled");
+//   } else {
+//     index = 0;
+//     arrowLeft.classList.add("disabled");
+//   }
 
-  activePortfolio();
-});
+//   activePortfolio();
+// });
