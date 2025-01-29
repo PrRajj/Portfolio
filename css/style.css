@@ -319,10 +319,6 @@ section.active {
   color: var(--main-color);
 }
 
-.size {
-  font-size: 1rem;
-}
-
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -936,6 +932,10 @@ section.active {
 @media screen and (max-width: 450px) {
   html {
     font-size: 45%;
+  }
+
+  .size {
+    font-size: 1rem;
   }
 }
 
