@@ -931,7 +931,7 @@ section.active {
 
 @media screen and (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
@@ -941,7 +941,7 @@ section.active {
   .resume-box .heading,
   .resume-box .desc,
   .resume-detail.about .resume-item {
-    text-align: center;
+    text-align: left;
   }
 
   .home-detail .btn-sci {
